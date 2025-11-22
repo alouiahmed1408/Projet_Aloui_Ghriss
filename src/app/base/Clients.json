@@ -6,12 +6,12 @@
       "nomClient": "Salah",
       "prenom": "Ahmed",
       "age": 32,
-      "password": "1234",
+      "password": "12345",
       "fav_repas": [
         "Couscous Tunisien"
       ],
       "photoClient": "clients/img1.jpeg",
-      "nombrevisite": 6,
+      "nombrevisite": 10,
       "ClientFidele": false,
       "role": "Client"
     },
@@ -111,15 +111,15 @@
       "nomClient": "Aloui",
       "prenom": "Sabri",
       "age": 20,
-      "password": "CPBxhfRV4DRW9QN",
+      "password": "sisabrixD",
       "confirmPassword": "CPBxhfRV4DRW9QN",
       "fav_repas": [
-        "Loubya",
         "Brik à l'œuf",
-        "Couscous Tunisien"
+        "Couscous Tunisien",
+        "Loubya"
       ],
       "photoClient": "clients/img5.jpeg",
-      "nombrevisite": 37,
+      "nombrevisite": 44,
       "ClientFidele": false,
       "role": "Client"
     },
@@ -160,7 +160,7 @@
       "password": "pwdAdmin",
       "fav_repas": [],
       "photoClient": "clients/img8.jpeg",
-      "nombrevisite": 7,
+      "nombrevisite": 10,
       "ClientFidele": false,
       "role": "Admin"
     }

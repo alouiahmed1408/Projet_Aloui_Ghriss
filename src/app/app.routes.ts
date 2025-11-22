@@ -11,6 +11,7 @@ import { clientGuardGuard } from './guards/client-guard-guard';
 import { SelectedRepas } from './component/selected-repas/selected-repas';
 import { EditRepas } from './component/edit-repas/edit-repas';
 import { AddNewRepas } from './component/add-new-repas/add-new-repas';
+import { ModifierCompte } from './component/modifier-compte/modifier-compte';
 
 
 export const routes: Routes = [
@@ -26,6 +27,7 @@ export const routes: Routes = [
         canActivate: [adminGuardGuard],
         children: [
             { path: 'clients', title: 'Admin - Clients', component: ListeClients },
+            { path: 'profile', title: 'Mon Profil', component: ProfileClientComponent },
             { path: 'add-new-repas', component: AddNewRepas },
             { path: '', redirectTo: 'repas', pathMatch: 'full' }
         ]
@@ -39,7 +41,7 @@ export const routes: Routes = [
             { path: '', redirectTo: 'profile', pathMatch: 'full' }
         ]
     },
-
+    { path: 'modifier/:id', component: ModifierCompte },
     { path: '', redirectTo: 'home', pathMatch: 'full' },
     { path: '**', component: Error404 },
 ];

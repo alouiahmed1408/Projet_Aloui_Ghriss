@@ -9,7 +9,7 @@ const API_URL="http://localhost:3000/clients";
 export class ClientsService {
   private readonly http:HttpClient=inject(HttpClient);
   public getClients():Observable<Compte[]>{
-    return this.http.get<Compte[]>(API_URL)
+    return this.http.get<Compte[]>(API_URL);
   }
   public addClient(c:Compte):Observable<Compte>{
     return this.http.post<Compte>(API_URL,c);
@@ -20,4 +20,10 @@ export class ClientsService {
   public  deleteClient(id:string):Observable<Compte>{
       return this.http.delete<Compte>(API_URL+"/"+id);
     }
+   
+public updateClientCredentials(id: string, username: string, password: string): Observable<Compte> {
+  const credentials = { username, password };
+  return this.http.patch<Compte>(`${API_URL}/${id}`, credentials);
+}
+
 }

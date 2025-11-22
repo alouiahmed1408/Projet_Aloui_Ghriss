@@ -16,6 +16,11 @@
             <a routerLinkActive="active" class="nav-link" routerLink="/client/profile">Mon Profil</a>
         </li>
     }
+    @if (isAdmin) {
+        <li class="nav-item">
+            <a routerLinkActive="active" class="nav-link" routerLink="/admin/profile">Mon Profil</a>
+        </li>
+    }
 
     @if (isAdmin) {
         <li class="nav-item">

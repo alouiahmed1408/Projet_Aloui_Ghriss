@@ -1,0 +1,12 @@
+
+<form [formGroup]="form">
+    <div class="mb-3">
+  <label>Username :</label>
+  <input type="text" formControlName="username"></div>
+<br>
+ <div class="mb-3">
+  <label>Mot de passe :</label>
+  <input type="password" formControlName="password"></div>
+<br>
+  <input type="button" value="Modifier vous cordonner" class="btn btn-secondary"  (click)="modifier()" [disabled]="form.invalid">
+</form>
