@@ -1,0 +1,16 @@
+<div id="blk">
+    <form [formGroup]="logInForm" (ngSubmit)="onSubmitLogIn()">
+
+        <h1>log-in</h1>
+        <p>Username</p>
+        <input type="text" placeholder="Enter username" id="namec" formControlName="username">
+
+        <p>Password</p>
+        <input type="password" placeholder="Enter password" id="passwordc" formControlName="password">
+
+        <input type="submit" value="Login" [disabled]="logInForm.invalid">
+    </form>
+    @if (errorMessage) {
+    <div class="alert alert-danger mt-3">{{ errorMessage }}</div>
+    }
+</div>

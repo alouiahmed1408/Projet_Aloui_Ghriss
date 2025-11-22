@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Projet_Aloui_Ghriss": {
+    "Vers1": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -56,10 +56,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "Projet_Aloui_Ghriss:build:production"
+              "buildTarget": "Vers1:build:production"
             },
             "development": {
-              "buildTarget": "Projet_Aloui_Ghriss:build:development"
+              "buildTarget": "Vers1:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -88,5 +88,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

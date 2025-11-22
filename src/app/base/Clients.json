@@ -1,0 +1,168 @@
+{
+  "clients": [
+    {
+      "id": "1",
+      "username": "Ahmed Salah",
+      "nomClient": "Salah",
+      "prenom": "Ahmed",
+      "age": 32,
+      "password": "1234",
+      "fav_repas": [
+        "Couscous Tunisien"
+      ],
+      "photoClient": "clients/img1.jpeg",
+      "nombrevisite": 6,
+      "ClientFidele": false,
+      "role": "Client"
+    },
+    {
+      "id": "2",
+      "username": "Leila ben ahmed",
+      "nomClient": "ben ahmed",
+      "prenom": "Leila",
+      "age": 28,
+      "password": "1234",
+      "fav_repas": [
+        "Couscous Tunisien"
+      ],
+      "photoClient": "clients/img9.jpeg",
+      "nombrevisite": 0,
+      "ClientFidele": true,
+      "role": "Client"
+    },
+    {
+      "id": "3",
+      "username": "Fethi Baccar",
+      "nomClient": "Baccar",
+      "prenom": "Fethi",
+      "age": 35,
+      "password": "1234",
+      "fav_repas": [
+        "Brik à l'œuf"
+      ],
+      "photoClient": "clients/img2.jpeg",
+      "nombrevisite": 0,
+      "ClientFidele": false,
+      "role": "Client"
+    },
+    {
+      "id": "4",
+      "username": "Houssem khlifi",
+      "nomClient": "khlifi",
+      "prenom": "Houssem",
+      "age": 30,
+      "password": "1234",
+      "fav_repas": [
+        "Ojja Merguez"
+      ],
+      "photoClient": "clients/img3.jpeg",
+      "nombrevisite": 0,
+      "ClientFidele": false,
+      "role": "Client"
+    },
+    {
+      "id": "5",
+      "username": "Rania ben abdallah",
+      "nomClient": "ben abdallah",
+      "prenom": "Rania",
+      "age": 26,
+      "password": "1234",
+      "fav_repas": [
+        "Ojja Merguez"
+      ],
+      "photoClient": "clients/img10.jpeg",
+      "nombrevisite": 6,
+      "ClientFidele": true,
+      "role": "Client"
+    },
+    {
+      "id": "6",
+      "username": "Nidhal Jebali",
+      "nomClient": "Jebali",
+      "prenom": "Nidhal",
+      "age": 33,
+      "password": "1234",
+      "fav_repas": [
+        "Makrouna tunisienne"
+      ],
+      "photoClient": "clients/img4.jpeg",
+      "nombrevisite": 9,
+      "ClientFidele": true,
+      "role": "Client"
+    },
+    {
+      "id": "7",
+      "username": "Sarra Kefi",
+      "nomClient": "Kefi",
+      "prenom": "Sarra",
+      "age": 24,
+      "password": "1234",
+      "fav_repas": [
+        "Makrouna tunisienne"
+      ],
+      "photoClient": "clients/img11.jpeg",
+      "nombrevisite": 7,
+      "ClientFidele": true,
+      "role": "Client"
+    },
+    {
+      "id": "8",
+      "username": "sidAhmedXd",
+      "nomClient": "Aloui",
+      "prenom": "Sabri",
+      "age": 20,
+      "password": "CPBxhfRV4DRW9QN",
+      "confirmPassword": "CPBxhfRV4DRW9QN",
+      "fav_repas": [
+        "Loubya",
+        "Brik à l'œuf",
+        "Couscous Tunisien"
+      ],
+      "photoClient": "clients/img5.jpeg",
+      "nombrevisite": 37,
+      "ClientFidele": false,
+      "role": "Client"
+    },
+    {
+      "id": "9",
+      "username": "ahmedkhalil@gmail.com",
+      "nomClient": "Ahmed",
+      "prenom": "Aloui",
+      "age": 23,
+      "password": "123456",
+      "confirmPassword": "123456",
+      "fav_repas": [],
+      "photoClient": "clients/img6.avif",
+      "nombrevisite": 1,
+      "ClientFidele": false,
+      "role": "Client"
+    },
+    {
+      "id": "10",
+      "username": "Sabrichka",
+      "nomClient": "Ben",
+      "prenom": "Boubaker",
+      "age": 50,
+      "password": "Sabrichka1515",
+      "confirmPassword": "Sabrichka1515",
+      "fav_repas": [],
+      "photoClient": "clients/img7.jpeg",
+      "nombrevisite": 7,
+      "ClientFidele": false,
+      "role": "Client"
+    },
+    {
+      "id": "admin-1",
+      "username": "admin",
+      "nomClient": "Admin",
+      "prenom": "Super",
+      "age": null,
+      "password": "pwdAdmin",
+      "fav_repas": [],
+      "photoClient": "clients/img8.jpeg",
+      "nombrevisite": 7,
+      "ClientFidele": false,
+      "role": "Admin"
+    }
+  ]
+}

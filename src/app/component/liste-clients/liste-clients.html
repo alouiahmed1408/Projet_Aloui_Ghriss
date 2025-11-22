@@ -1,0 +1,28 @@
+<h1 class="text-center mb-4">Liste des Clients</h1>
+
+<div class="row">
+  @for (cl of lesclients; track $index) {
+    <div class="col-md-4 mb-4">
+      <div class="card shadow-sm h-100">
+        <img [src]="cl.photoClient" class="card-img-top" alt="{{cl.nomClient}}" style="height:200px; object-fit:cover;">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">{{cl.nomClient}} {{cl.prenom}}</h5>
+          <p class="card-text">
+            <strong>Age:</strong> {{cl.age}} <br>
+            <strong>Nombre de visites:</strong> {{cl.nombrevisite}}
+          </p>
+          <p class="card-text"><i 
+              [class]="cl.ClientFidele ? 'bi bi-bag-check text-success' : 'bi bi-bag-x text-danger'" 
+              style="cursor:pointer;"
+              (click)="toggleFidele(cl)">
+            </i>
+            Client Fidèle
+          </p>
+          <button class="btn btn-danger mt-auto" (click)="deleteClient(cl.id)">
+            Supprimer
+          </button>
+        </div>
+      </div>
+    </div>
+  }
+</div>

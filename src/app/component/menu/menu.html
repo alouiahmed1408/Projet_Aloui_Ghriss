@@ -1,0 +1,46 @@
+<ul class="nav nav-pills bg-light shadow-sm rounded-4 px-3 py-2 gap-2 align-items-center">
+
+    <li class="nav-item">
+        <a routerLinkActive="active" class="nav-link home-link p-0" routerLink="/home">
+    <img src="siteKoulTounsi.png" alt="Home" class="home-logo">
+</a>
+
+    </li>
+
+    <li class="nav-item">
+        <a routerLinkActive="active" class="nav-link" routerLink="/repas">Repas</a>
+    </li>
+
+    @if (isClient) {
+        <li class="nav-item">
+            <a routerLinkActive="active" class="nav-link" routerLink="/client/profile">Mon Profil</a>
+        </li>
+    }
+
+    @if (isAdmin) {
+        <li class="nav-item">
+            <a routerLinkActive="active" class="nav-link" routerLink="/admin/clients">Clients</a>
+        </li>
+    }
+
+    @if (!isLogged) {
+        <li class="nav-item ms-auto">
+            <a routerLinkActive="active" class="nav-link" routerLink="/log-in">Log in</a>
+        </li>
+
+        <li class="nav-item">
+            <a routerLinkActive="active" class="nav-link" routerLink="/sign-in">Sign in</a>
+        </li>
+    }
+
+    @if (isLogged) {
+        <li class="nav-item ms-auto">
+            <a class="nav-link text-danger fw-semibold" style="cursor:pointer;" (click)="logout()">
+                Log Out
+            </a>
+        </li>
+    }
+
+</ul>
+
+<router-outlet></router-outlet>

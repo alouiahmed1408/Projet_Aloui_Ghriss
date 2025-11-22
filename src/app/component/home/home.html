@@ -1,0 +1,30 @@
+<h1 class="mb-4 text-center">Bienvenue dans notre site</h1>
+
+@if (weather) {
+  <div class="weather-box shadow-sm d-flex align-items-center gap-2">
+    <img [src]="weather.icon" class="weather-icon">
+    <div>
+      <strong>{{ city }}</strong><br>
+      <strong>Météo :</strong><br>
+      {{ weather.temperature }}°C<br>
+    </div>
+  </div>
+}
+
+
+@if (repas.length > 0) {
+  <div class="repas-slider-wrapper">
+    <button class="scroll-btn left" (click)="scrollLeft()">&#10094;</button>
+
+    <div class="repas-slider-container" #slider>
+      @for (item of repas; track item; let i = $index) {
+        <div class="repas-card">
+          <img [src]="item.photo" [alt]="item.nom">
+          <h5>{{ item.nom }}</h5>
+        </div>
+      }
+    </div>
+
+    <button class="scroll-btn right" (click)="scrollRight()">&#10095;</button>
+  </div>
+}

@@ -1,0 +1,65 @@
+<div class="container mt-4">
+
+  @if (client) {
+
+    <div class="card shadow-lg border-0 rounded-4 p-4">
+
+      <div class="text-center mb-4">
+
+        @if (client.photoClient) {
+          <img 
+            [src]="client.photoClient"
+            class="rounded-circle shadow-sm mb-3"
+            width="140" height="140">
+        }
+
+        <h2 class="fw-bold">{{ client.prenom }} {{ client.nomClient }}</h2>
+        <p class="text-muted">@{{ client.username }}</p>
+      </div>
+
+      <hr>
+
+      <div class="row">
+        <div class="col-md-6">
+          <h5><strong>Âge :</strong> {{ client.age }}</h5>
+          <h5><strong>Nombre de visites :</strong> {{ client.nombrevisite }}</h5>
+        </div>
+
+        <div class="col-md-6">
+          <h5>
+            <strong>Rôle :</strong>
+            <span class="badge bg-primary">{{ client.role }}</span>
+          </h5>
+
+          <h5>
+            <strong>Client fidèle :</strong>
+            <span class="badge" 
+                  [class]="client.ClientFidele ? 'bg-success' : 'bg-secondary'">
+              {{ client.ClientFidele ? 'Oui' : 'Non' }}
+            </span>
+          </h5>
+        </div>
+      </div>
+
+      <hr>
+
+      <h4 class="mt-4 mb-3">Repas Favoris</h4>
+
+      <ul class="list-group">
+        @for (fav of client.fav_repas; track $index) {
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            {{ fav }}
+
+            <span class="badge bg-danger" style="cursor:pointer;"
+                  (click)="removeFavorite(fav)">
+              X
+            </span>
+          </li>
+        }
+      </ul>
+
+    </div>
+
+  }
+
+</div>

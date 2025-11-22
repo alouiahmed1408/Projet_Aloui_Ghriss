@@ -1,0 +1,326 @@
+{
+  "koultounsi": [
+    {
+      "id": "PLT1",
+      "nom": "Couscous Tunisien",
+      "localisation": "Tunis, Tunisie",
+      "photo": "couscous.jpeg",
+      "dateDecouverte": "2020-05-10",
+      "prixEntree": 15.5,
+      "commentaires": [
+        {
+          "nom": "Ahmed Salah",
+          "message": "Un gout authentique, comme au village "
+        },
+        {
+          "nom": "Leila ben ahmed",
+          "message": "Très bon mais un peu épicé pour moi."
+        },
+        {
+          "nom": "Ahmed Salah",
+          "message": "délicieux"
+        }
+      ],
+      "recette": [
+        {
+          "nomproduit": "Semoule",
+          "quantite": "500g"
+        },
+        {
+          "nomproduit": "Viande d’agneau",
+          "quantite": "400g"
+        },
+        {
+          "nomproduit": "Pois chiches",
+          "quantite": "100g"
+        },
+        {
+          "nomproduit": "Tomates",
+          "quantite": "3 pièces"
+        },
+        {
+          "nomproduit": "Harissa",
+          "quantite": "1 cuillère à soupe"
+        }
+      ],
+      "Personnes": 4,
+      "temps_preparation": 90,
+      "Preparation": [
+        {
+          "etapes": "Faire revenir la viande avec les oignons et les épices.",
+          "astuces": "Utiliser un mélange d’huile d’olive et de smen pour plus de goût."
+        },
+        {
+          "etapes": "Ajouter les légumes, les pois chiches et la sauce tomate.",
+          "astuces": "Cuire à feu doux pour que les saveurs se mélangent bien."
+        },
+        {
+          "etapes": "Cuire la semoule à la vapeur.",
+          "astuces": "Ne pas trop tasser la semoule pour qu’elle reste légère."
+        }
+      ],
+      "ClientFidéle": [
+        {
+          "nom": "Sami Kefi"
+        },
+        {
+          "nom": "Nour Hachicha"
+        }
+      ]
+    },
+    {
+      "id": "PLT2",
+      "nom": "Brik à l'œuf",
+      "localisation": "Sfax, Tunisie",
+      "photo": "brik.jpg",
+      "dateDecouverte": "2021-03-22",
+      "prixEntree": 6,
+      "commentaires": [
+        {
+          "nom": "Fethi Baccar",
+          "message": "Croustillant parfait et œuf coulant !"
+        },
+        {
+          "nom": "Anonyme",
+          "message": "très magnifique"
+        }
+      ],
+      "recette": [
+        {
+          "nomproduit": "Feuille de brick",
+          "quantite": "1 pièce"
+        },
+        {
+          "nomproduit": "Œuf",
+          "quantite": "1"
+        },
+        {
+          "nomproduit": "Thon",
+          "quantite": "1 cuillère à soupe"
+        },
+        {
+          "nomproduit": "Câpres",
+          "quantite": "quelques-unes"
+        },
+        {
+          "nomproduit": "Persil",
+          "quantite": "1 cuillère à café"
+        }
+      ],
+      "Personnes": 1,
+      "temps_preparation": 10,
+      "Preparation": [
+        {
+          "etapes": "Déposer le thon, les câpres et l'œuf au centre de la feuille.",
+          "astuces": "Ne pas trop plier la feuille pour éviter que l'œuf ne casse."
+        },
+        {
+          "etapes": "Plier et faire frire jusqu’à ce que la feuille soit dorée.",
+          "astuces": "Utiliser une huile bien chaude pour un croustillant parfait."
+        }
+      ],
+      "ClientFidéle": [
+        {
+          "nom": "Imen Gharbi"
+        }
+      ]
+    },
+    {
+      "id": "PLT3",
+      "nom": "Ojja Merguez",
+      "localisation": "Kairouan, Tunisie",
+      "photo": "Ojja.webp",
+      "dateDecouverte": "2019-11-15",
+      "prixEntree": 12,
+      "commentaires": [
+        {
+          "nom": "Houssem khlifi",
+          "message": "Parfaite avec du pain frais !"
+        },
+        {
+          "nom": "Rania ben abdallah",
+          "message": "Très bonne mais un peu trop piquante."
+        }
+      ],
+      "recette": [
+        {
+          "nomproduit": "Merguez",
+          "quantite": "200g"
+        },
+        {
+          "nomproduit": "Tomates",
+          "quantite": "4"
+        },
+        {
+          "nomproduit": "Œufs",
+          "quantite": "3"
+        },
+        {
+          "nomproduit": "Ail",
+          "quantite": "2 gousses"
+        },
+        {
+          "nomproduit": "Harissa",
+          "quantite": "1 cuillère à soupe"
+        }
+      ],
+      "Personnes": 3,
+      "temps_preparation": 25,
+      "Preparation": [
+        {
+          "etapes": "Faire revenir les merguez et l’ail dans une poêle.",
+          "astuces": "Piquer les merguez pour éviter qu’elles n’éclatent."
+        },
+        {
+          "etapes": "Ajouter les tomates et la harissa, laisser mijoter.",
+          "astuces": "Utiliser des tomates bien mûres pour plus de sauce."
+        },
+        {
+          "etapes": "Casser les œufs et cuire selon la préférence.",
+          "astuces": "Ne pas trop cuire les œufs pour garder le jaune coulant."
+        }
+      ],
+      "ClientFidéle": [
+        {
+          "nom": "Karim Mejri"
+        },
+        {
+          "nom": "Sana Dabbabi"
+        }
+      ]
+    },
+    {
+      "id": "PLT4",
+      "nom": "Makrouna tunisienne",
+      "localisation": "Tunis, Tunisie",
+      "photo": "makrouna.jpg",
+      "dateDecouverte": "2020-09-15",
+      "prixEntree": 8.5,
+      "commentaires": [
+        {
+          "nom": "Nidhal Jebali",
+          "message": "Un goût authentique, bien épicé comme il faut !"
+        },
+        {
+          "nom": "Sarra Kefi",
+          "message": "La meilleure makrouna tunisienne que j’ai goûtée."
+        }
+      ],
+      "recette": [
+        {
+          "nomproduit": "Pâtes spaghetti",
+          "quantite": "200 g"
+        },
+        {
+          "nomproduit": "Viande hachée",
+          "quantite": "100 g"
+        },
+        {
+          "nomproduit": "Tomates concentrées",
+          "quantite": "2 cuillères à soupe"
+        },
+        {
+          "nomproduit": "Harissa",
+          "quantite": "1 cuillère à café"
+        },
+        {
+          "nomproduit": "Ail",
+          "quantite": "2 gousses"
+        },
+        {
+          "nomproduit": "Huile d’olive",
+          "quantite": "2 cuillères à soupe"
+        },
+        {
+          "nomproduit": "Sel et poivre",
+          "quantite": "au goût"
+        }
+      ],
+      "Personnes": 2,
+      "temps_preparation": 25,
+      "Preparation": [
+        {
+          "etapes": "Faire revenir l’ail et la viande dans l’huile d’olive.",
+          "astuces": "Bien dorer la viande pour plus de saveur."
+        },
+        {
+          "etapes": "Ajouter la tomate, l’harissa et les épices, puis laisser mijoter.",
+          "astuces": "Ajouter un peu d’eau pour obtenir une sauce onctueuse."
+        },
+        {
+          "etapes": "Cuire les pâtes et les mélanger à la sauce.",
+          "astuces": "Ne pas trop cuire les pâtes pour garder une texture al dente."
+        }
+      ],
+      "ClientFidéle": [
+        {
+          "nom": "Karim Ben Salah"
+        },
+        {
+          "nom": "Leila Trabelsi"
+        }
+      ]
+    },
+    {
+      "id": "PLT5",
+      "nom": "Loubya",
+      "localisation": "Tunis, Tunisie",
+      "photo": "loubya.jpg",
+      "dateDecouverte": "2023-01-01",
+      "prixEntree": 10,
+      "commentaires": [
+        {
+          "nom": "Sabri",
+          "message": "Quel bon plat !"
+        },
+        {
+          "nom": "sidAhmedXd",
+          "message": "sabri l'aime"
+        },
+        {
+          "nom": "sidAhmedXd",
+          "message": "sabri ymout 3leha😂😂😂"
+        },
+        {
+          "nom": "sidAhmedXd",
+          "message": "yhebha ka sabri"
+        },
+        {
+          "nom": "ahmedkhalil@gmail.com",
+          "message": "très magnifique"
+        }
+      ],
+      "recette": [
+        {
+          "nomproduit": "Haricots verts",
+          "quantite": "300g"
+        },
+        {
+          "nomproduit": "Tomates",
+          "quantite": "2 pièces"
+        },
+        {
+          "nomproduit": "Oignons",
+          "quantite": "1 pièce"
+        },
+        {
+          "nomproduit": "Ail",
+          "quantite": "2 gousses"
+        }
+      ],
+      "Personnes": 2,
+      "temps_preparation": 40,
+      "Preparation": [
+        {
+          "etapes": "Faire revenir les oignons et l’ail.",
+          "astuces": "Ne pas brûler les ingrédients."
+        },
+        {
+          "etapes": "Ajouter les haricots et les tomates, laisser mijoter.",
+          "astuces": "Cuire à feu doux pour que les saveurs se mélangent."
+        }
+      ],
+      "ClientFidéle": []
+    }
+  ]
+}

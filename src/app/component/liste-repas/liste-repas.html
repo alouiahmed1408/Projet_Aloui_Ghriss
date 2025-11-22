@@ -1,0 +1,58 @@
+<div class="row mb-3">
+  <div class="col-md-6 mb-2">
+    <input 
+      type="text" 
+      class="form-control" 
+      placeholder="Rechercher un repas..." 
+      [(ngModel)]="searchTerm" 
+      (input)="filterRepas()">
+  </div>
+
+  <div class="col-md-6 mb-2">
+    <input 
+      type="text" 
+      class="form-control" 
+      placeholder="Rechercher par localisation..." 
+      [(ngModel)]="searchLocation" 
+      (input)="filterRepas()">
+  </div>
+
+  @if(isAdmin) {
+    <div class="col-12 text-end mt-2">
+      <a class="btn btn-primary" [routerLink]="['/admin/add-new-repas']">
+        ➕ Ajouter un nouveau repas
+      </a>
+    </div>
+  }
+</div>
+
+<div class="row">
+  @for(tbrepas of filteredRepas; track $index){
+    <div class="col-md-4 mb-4">
+      <div class="card repas-card h-100 shadow-sm">
+        <img class="card-img-top" [src]="tbrepas.photo" alt="{{tbrepas.nom}}" style="height: 200px; object-fit: cover;">
+        <div class="card-body">
+          <h5 class="card-title">{{tbrepas.nom}}</h5>
+          <p class="card-text"><strong>Price:</strong> {{tbrepas.prixEntree|dt}}</p>
+          <p class="card-text"><strong>Localisation:</strong> {{tbrepas.localisation}}</p>
+          
+          @if(!isAdmin){
+            <a class="btn btn-primary btn-sm w-100 mb-2" [routerLink]="['/repas', tbrepas.id]">
+              Voir Détails
+            </a>
+          }
+
+          @if(isAdmin){
+            <button 
+              class="btn btn-warning btn-sm w-100 mb-2"
+              [routerLink]="['/repas/edit-repas', tbrepas.id]">
+              Modifier
+            </button>
+
+            <button class="btn btn-danger btn-sm w-100" (click)="supprimeRepas(tbrepas.id)">Supprimer</button>
+          }
+        </div>
+      </div>
+    </div>
+  }
+</div>

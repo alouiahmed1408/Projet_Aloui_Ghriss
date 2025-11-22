@@ -1,0 +1,68 @@
+@if(repas){
+
+  <div class="container my-4">
+    <h2 class="text-center mb-4">{{ repas.nom }}</h2>
+
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        
+        <img [src]="repas.photo" alt="{{ repas.nom }}" class="img-fluid rounded shadow-sm mb-3">
+<div class="d-flex align-items-center mb-3">
+  <h2 class="text-center mb-4 me-3">{{ repas.nom }}</h2>
+  @if (isClient) {
+  <i 
+    class="bi" 
+    [ngClass]="isFavorite ? 'bi-heart-fill text-danger' : 'bi-heart'" 
+    (click)="toggleFavorite()"
+    style="font-size: 2rem; cursor: pointer;"
+  ></i>}
+</div>
+
+        <ul class="list-group mb-3">
+          <li class="list-group-item"><strong>ID:</strong> {{ repas.id }}</li>
+          <li class="list-group-item"><strong>Localisation:</strong> {{ repas.localisation }}</li>
+          <li class="list-group-item"><strong>Prix d'entrée:</strong> {{ repas.prixEntree | currency:'EUR' }}</li>
+          <li class="list-group-item"><strong>Nombre de personnes:</strong> {{ repas.Personnes }}</li>
+          <li class="list-group-item"><strong>Temps de préparation:</strong> {{ repas.temps_preparation |min}}</li>
+        </ul>
+
+        <h5>Recette:</h5>
+        <ul class="list-group mb-3">
+          @for(item of repas.recette; track $index){
+            <li class="list-group-item">{{ item.nomproduit }} : {{ item.quantite }}</li>
+          }
+        </ul>
+
+        <h5>Préparation:</h5>
+        <ol class="list-group list-group-numbered mb-3">
+          @for(step of repas.Preparation; track $index){
+            <li class="list-group-item">
+              {{ step.etapes }}<br>
+              <small class="text-muted">{{ step.astuces }}</small>
+            </li>
+          }
+        </ol>
+      </div>
+
+      <div class="col-md-6">
+        <h5>Commentaires:</h5>
+        <ul class="list-group mb-3">
+          @for(comment of repas.commentaires; track $index){
+            <li class="list-group-item">
+              <strong>{{ comment.nom }}:</strong> {{ comment.message }}
+            </li>
+          }
+        </ul>
+@if (isClient) {
+  <h5>Ajouter un commentaire:</h5>
+  <div class="mb-3">
+    <textarea [(ngModel)]="newComment.message" class="form-control mb-2" placeholder="Votre commentaire"></textarea>
+    <button class="btn btn-primary w-100" (click)="addComment()">Ajouter</button>
+  </div>
+}
+          
+</div>
+    </div>
+  </div>
+
+}

@@ -1,0 +1,52 @@
+<h2 class="text-center mb-4">Modifier Repas</h2>
+
+@if (repas) {
+
+  <div class="card shadow p-4">
+
+    <div class="mb-3">
+      <label class="form-label fw-bold">Nom du repas</label>
+      <input class="form-control" [(ngModel)]="repas.nom">
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label fw-bold">Localisation</label>
+      <input class="form-control" [(ngModel)]="repas.localisation">
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label fw-bold">Photo (URL)</label>
+      <input class="form-control" [(ngModel)]="repas.photo">
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label fw-bold">Date de découverte</label>
+      <input type="date" class="form-control"
+             [(ngModel)]="repas.dateDecouverte">
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label fw-bold">Prix d'entrée (DT)</label>
+      <input type="number" class="form-control"
+             [(ngModel)]="repas.prixEntree">
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label fw-bold">Nombre de personnes</label>
+      <input type="number" class="form-control"
+             [(ngModel)]="repas.Personnes">
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label fw-bold">Temps de préparation (minutes)</label>
+      <input type="number" class="form-control"
+             [(ngModel)]="repas.temps_preparation">
+    </div>
+
+    <button class="btn btn-success w-100 mt-3" (click)="save()">
+      💾 Enregistrer les modifications
+    </button>
+
+  </div>
+
+}

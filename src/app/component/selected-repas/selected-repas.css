@@ -1,0 +1,46 @@
+.heart-checkbox {
+  display: none;
+}
+
+.heart-label {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  position: relative;
+  transform: rotate(-45deg);
+  margin-left: 0.5rem;
+}
+
+.heart-label::before,
+.heart-label::after {
+  content: "";
+  position: absolute;
+  width: 1rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  border: 2px solid red; 
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  transition: background-color 0.2s;
+}
+
+.heart-label::after {
+  left: 1rem;
+}
+
+.heart-label::before {
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+
+.heart-label::after {
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+.heart-checkbox:checked + .heart-label::before,
+.heart-checkbox:checked + .heart-label::after {
+  background-color: red;
+}
